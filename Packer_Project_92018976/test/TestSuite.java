@@ -4,7 +4,6 @@
  * and open the template in the editor.
  */
 
-
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
 import packer.AddressTest;
@@ -16,7 +15,6 @@ import packer.ManifestTest;
 import packer.PackerTest;
 import packer.ProductTest;
 import packer.ProductWeightComparatorTest;
-
 
 /**
  *
@@ -38,4 +36,3 @@ import packer.ProductWeightComparatorTest;
 public class TestSuite {
     // No code required here.
 }
-
