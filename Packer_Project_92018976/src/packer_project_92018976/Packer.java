@@ -10,11 +10,10 @@ import java.util.List;
 public class Packer {
 
     /** 
-     * Switched (d,c) to (c,d) as box is required to have box before depot 
-     * @param c This object holds the customers name and address
-     * @param d This object holds the depot's name and address
-     * @param m This object holds information on products, quantities, and weight
-     * @return summary of packed boxes
+     * param c customers name and address
+     * param d depot's name and address
+     * param m products, quantities, and weight info
+     * return summary of packed boxes
      */
     public static List<Box> packProducts(Customer c, Depot d, Manifest m) {
         List<Box> packedBoxes = new ArrayList<>();
@@ -33,9 +32,7 @@ public class Packer {
                 m.removeProduct(prodToAdd);
             }  
         }
-        /** Re factored by removing the second duplicate call to method:
-            //packedBoxes.add(b);
-                */
+        
         if (b != null) {
             packedBoxes.add(b);
         }

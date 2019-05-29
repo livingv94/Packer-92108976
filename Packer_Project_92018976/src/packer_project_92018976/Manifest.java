@@ -11,9 +11,9 @@ import java.util.TreeSet;
  */
 public class Manifest {
     
-    // This tracks the quantity if each product in the manifest
+    //tracks the quantity of each product in the manifest
     private Map<Product, Integer> quantities;
-    // This keeps a list of all products ordered by weight
+    //keeps a list of all products ordered by weight
     private Set<Product> byWeight;
 
     public Manifest() {
@@ -37,10 +37,6 @@ public class Manifest {
         }
     }
     
-     /**
-      * Removed -1 from quantities.put(p,quantities.get(p)-1);
-     * @param p removing product
-      */
     public void removeProduct(Product p) {
         if (quantities.containsKey(p) && quantities.get(p) > 0) {
             quantities.put(p,quantities.get(p));
@@ -76,14 +72,8 @@ public class Manifest {
     }
     
     /**
-     * Changed:
-     * for (Product p : quantities.keySet()) {
      * 
-     * to
-     * 
-     * quantities.keySet().stream().map((p) - {
-     * 
-     * @return total result of product manifest
+     * return total manifest product
      */
     @Override
     public String toString() {
@@ -102,30 +92,12 @@ public class Manifest {
     }
     
     /**
-     * Re factored code:
-     * public boolean hasFragileItems() {
-        for (Product p : quantities.keySet()) {
-            if (p.isFragile()) {
-                return true;
-            }
-        }
-        return false;
-    }
      * 
-     * to
-     * 
-     *  public boolean hasFragileItems() {
-        return quantities.keySet().stream().anyMatch((p) - (p.isFragile()));
-    }
-     * 
-     * @return fragile items
+     * return fragile items
      */
     public boolean hasFragileItems() {
         return quantities.keySet().stream().anyMatch((p) -> (p.isFragile()));
     }
-    /**
-     * Added extra } below that was missing 
-     */
 }
     
 

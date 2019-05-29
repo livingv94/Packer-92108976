@@ -21,7 +21,7 @@ public class Address {
 
     /**
      *
-     * @return the address
+     * Returns Address
      */
     @Override
     public String toString() {
@@ -32,7 +32,7 @@ public class Address {
                 postcode;
     }
     /**
-     * @return the coordinates
+     * Returns Coordinates
      */
     public Coordinates getCoordinates() {
         return coordinates;

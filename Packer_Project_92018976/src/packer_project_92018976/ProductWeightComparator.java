@@ -6,7 +6,7 @@ import java.util.Comparator;
  *
  * @author Victoria
  * 
- * This is used when we need to sort by product weight descending
+ * sort by weight descending
  */
 public class ProductWeightComparator implements Comparator<Product> {
     

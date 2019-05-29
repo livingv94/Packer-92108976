@@ -35,16 +35,12 @@ public class Coordinates {
         double dist = Math.abs(xDiff) + Math.abs(yDiff);
         return dist;
     }
-    /**  Needed to Add 1km to the result so changed:
-        
-        return (dist1 + dist2)/2;
-
-        to 
-
-        return (dist1 + dist2)/2+1;
-     * @param other Calculates X and Y coordinates for closest match
-     * @return the distance between euclideanDistance and manhattanDistance
+    
+    /**
+    * Return distance between distances, 
+    * param 'other' closest match for X&Y
     */
+    
     public double companyDistanceTo(Coordinates other) {
         double xDiff1 = other.getX() - this.getX();
         double yDiff1 = other.getY() - this.getY();

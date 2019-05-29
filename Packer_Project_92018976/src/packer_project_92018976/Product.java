@@ -19,41 +19,29 @@ public class Product {
     }
 
     /**
-     * @return the weight
+     * return weight
      */
     public int getWeight() {
         return weight;
     }
 
     /**
-     * @return the name
+     * return name
      */
     public String getName() {
         return name;
     }
 
     /**
-     * @return the hazardous
+     * return if its hazardous
      */
-    /** Changed:
-    
-    public boolean isHazardous() {
-        return false;
-    }
 
-    to
-
-    public boolean isHazardous() {
-    return hazardous;
-    }
-     * @return hazardous
-    */
     public boolean isHazardous() {
         return hazardous;
     }
 
     /**
-     * @return the fragile
+     * @return if its fragile
      */
     public boolean isFragile() {
         return fragile;
@@ -61,7 +49,7 @@ public class Product {
 
     /**
      *
-     * @return name
+     * return name
      */
     @Override
     public String toString() {

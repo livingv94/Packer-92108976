@@ -12,18 +12,8 @@ public class Depot {
         this.name = name;
         this.address = address;
     }
-    /** Changed
-    
-       public String getName() {
-       return address.toString();
-       }
-
-       to
-    
-       public String getName() {
-       return name;
-       }
-     * @return the name
+    /** 
+     * returns name
     */
     public String getName() {
         return name;
@@ -35,7 +25,7 @@ public class Depot {
     
     /**
      *
-     * @return the name
+     * returns name
      */
     @Override
     public String toString() {

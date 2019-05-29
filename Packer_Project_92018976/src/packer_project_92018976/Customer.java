@@ -25,14 +25,9 @@ public class Customer {
     public String getName() {
         return name;
     }
-/**
- * 
- * Added:
- * 
- * bestDistance = distance;
-     * @param d find closest address to depot
-     * @return best address
- */   
+    /**
+     * return best address, param 'd' closest address
+     */   
     public Address getClosestAddressTo(Depot d) {
         double bestDistance = Double.MAX_VALUE;
         Address bestAddress = null;
