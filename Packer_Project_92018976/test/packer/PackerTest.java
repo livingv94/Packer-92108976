@@ -39,7 +39,7 @@ public class PackerTest {
     }
 
     /**
-     * Test of packProducts method, of class Packer.
+     * Class Packer, tests PackProducts method
      */
     @Test
     public void testPackProducts() {

@@ -16,15 +16,15 @@ import org.junit.BeforeClass;
 public class BoxTest {
     
     // Test data
-    Product a1 = new Product("Alpha", 0, true, true);
-    Product a2 = new Product("Alpha", 2, true, true);
-    Product a3 = new Product("Alpha", 3, false, true);
-    Product a4 = new Product("Alpha", 4, true, false);
+    Product a1 = new Product("Product1", 0, true, true);
+    Product a2 = new Product("Product1", 2, true, true);
+    Product a3 = new Product("Product1", 3, false, true);
+    Product a4 = new Product("Product1", 4, true, false);
     
-    Product b1 = new Product("Beta", 0, true, true);
-    Product b2 = new Product("Beta", 2, true, true);
-    Product b3 = new Product("Beta", 3, false, true);
-    Product b4 = new Product("Beta", 4, true, false);
+    Product b1 = new Product("Product2", 0, true, true);
+    Product b2 = new Product("Product2", 2, true, true);
+    Product b3 = new Product("Product2", 3, false, true);
+    Product b4 = new Product("Product2", 4, true, false);
         
     @BeforeClass
     public static void setUpClass() {
