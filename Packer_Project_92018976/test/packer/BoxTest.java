@@ -31,7 +31,7 @@ public class BoxTest {
         System.out.println("Testing Product class...");
     }
     /**
-     * Test of addProduct method, of class Box.
+     * Test addProduct method
      */
     @Test
     public void testAddProduct_Product() {
@@ -42,7 +42,7 @@ public class BoxTest {
     }
 
     /**
-     * Test of getLabel method, of class Box.
+     * Test getLabel method
      */
     @Test
     public void testGetLabel() {
@@ -55,7 +55,7 @@ public class BoxTest {
     }
 
     /**
-     * Test of toString method, of class Box.
+     * Test toString method
      */
     @Test
     public void testToString() {
@@ -68,7 +68,7 @@ public class BoxTest {
     }
 
     @Test
-    public void testEquals() {
+    public void testSame() {
         assertEquals(true, a1.equals(a1));
         assertEquals(true, a2.equals(a1));
         assertEquals(true, a3.equals(a1));
@@ -85,7 +85,7 @@ public class BoxTest {
     }
     
     /**
-     * Test of getWeight method, of class Box.
+     * Test getWeight method
      */
      @Test
     public void testGetWeight() {
@@ -95,11 +95,11 @@ public class BoxTest {
     }
 
     /**
-     * Test of canFit method, of class Box.
+     * Test canFit method
      */
     @Test
-    public void testCanFit_Product() {
-        System.out.println("canFit");
+    public void testCanFitProducts() {
+        System.out.println("canFitProducts");
         Product p = new Product("Screws", 41, true, true);
         Coordinates Coordinates1 = new Coordinates(1000, 2000);
         Address Address1 = new Address("1 First St", "Aplace", "Citadel City", "A111", Coordinates1);
@@ -112,10 +112,10 @@ public class BoxTest {
     }
 
     /**
-     * Test of canFit method, of class Box.
+     * Test canFit method
      */
     @Test
-    public void testCanFit_Product_int() {
+    public void testCanFitProductsNum() {
         System.out.println("canFit");
         Product p = new Product("Screws", 5, true, true);
         Coordinates Coordinates2 = new Coordinates(30,40);
@@ -129,11 +129,11 @@ public class BoxTest {
     }
 
     /**
-     * Test of remainingCapacity method, of class Box.
+     * Test remainingCapacity method
      */
     @Test
-    public void testRemainingCapacity() {
-        System.out.println("remainingCapacity");
+    public void testSpaceLeft() {
+        System.out.println("spaceLeft");
         Box instance = null;
         double expResult = 0.0;
         double result;
@@ -142,7 +142,7 @@ public class BoxTest {
     }
 
     /**
-     * Test of isFragile method, of class Box.
+     * Test isFragile method
      */
     @Test
     public void testIsFragile() {
@@ -151,7 +151,7 @@ public class BoxTest {
     }
 
     /**
-     * Test of isHazardous method, of class Box.
+     * Test isHazardous method
      */
     @Test
     public void testIsHazardous() {

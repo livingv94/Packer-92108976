@@ -64,7 +64,7 @@ public class ManifestTest {
      */
     @Test
     public void testGetTotalWeight() {
-        System.out.println("getTotalWeight");
+        System.out.println("totalWeight");
         Manifest instance = new Manifest();
         double expResult = 0.0;
         double result = instance.getTotalWeight();

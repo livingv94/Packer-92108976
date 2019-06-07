@@ -32,7 +32,7 @@ public class Manifest {
         else {
             quantities.put(p,quantity);
             if(!byWeight.add(p)) {
-                System.out.println("Couldn't add to Set");
+                System.out.println("Unable to add to set");
             }
         }
     }

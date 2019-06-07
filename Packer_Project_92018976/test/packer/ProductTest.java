@@ -15,7 +15,7 @@ import static org.junit.Assert.*;
 
 /**
  *
- * @author bryan
+ * @author Victoria
  */
 public class ProductTest {
     
