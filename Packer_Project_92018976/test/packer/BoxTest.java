@@ -111,22 +111,6 @@ public class BoxTest {
         assertEquals(false, b.canFit(p));
     }
 
-    /**
-     * Test canFit method
-     */
-    @Test
-    public void testCanFitProductsNum() {
-        System.out.println("canFit");
-        Product p = new Product("Screws", 5, true, true);
-        Coordinates Coordinates2 = new Coordinates(30,40);
-        Address Address2 = new Address("123 Count St", "Brooklyn", "Welling Town", "B222", Coordinates2);
-        Customer Customer2 = new Customer("Test Customer", Address2);
-        Depot Depot4 = new Depot("Depot4", Address2);
-        
-        Box b = new Box(Customer2,Depot4);
-        
-        assertEquals(true, b.canFit(p));
-    }
 
     /**
      * Test remainingCapacity method
